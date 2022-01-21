@@ -502,7 +502,6 @@ static int Integrand_cross(const int *ndim, const cubareal xx[], const int *ncom
       arg12 = r1p*cos(theta) - denom1;
 
       gamma1 = asin(D1);
-     //gamma2 = M_PI - gamma1;
 
       l1 = sqrt(arg1*arg1 + (deltap*deltap)/4. - 2*arg1*(deltap/2.)*cos(gamma1));
       l2 = sqrt(arg12*arg12 + (deltap*deltap)/4. + 2*arg12*(deltap/2.)*cos(gamma1));
@@ -528,18 +527,8 @@ static int Integrand_cross(const int *ndim, const cubareal xx[], const int *ncom
 
       arg1 = r2p*cos(theta) + denom1;
       arg12 = r2p*cos(theta) - denom1;
-
-//       gamma1 = asin(D2);
-//       gamma2 = M_PI - gamma1;
-
-//       l1 = sqrt(arg1*arg1 + (deltap*deltap)/4. - 2*arg1*(deltap/2.)*cos(gamma1));
-//       l2 = sqrt(arg12*arg12 + (deltap*deltap)/4. - 2*arg12*(deltap/2.)*cos(gamma2));
-
-//       mu1 = -((deltap/2. - arg1*cos(gamma1)))/(l1);
-//       mu12 = -((deltap/2. - arg12*cos(gamma2)))/(l2);
         
       gamma1 = asin(D2);
-     //gamma2 = M_PI - gamma1;
 
       l1 = sqrt(arg1*arg1 + (deltap*deltap)/4. - 2*arg1*(deltap/2.)*cos(gamma1));
       l2 = sqrt(arg12*arg12 + (deltap*deltap)/4. + 2*arg12*(deltap/2.)*cos(gamma1));
@@ -625,7 +614,6 @@ static int Integrand_angular(const int *ndim, const cubareal xx[], const int *nc
       arg12 = r3p*cos(theta) - denom1;
 
       gamma1 = asin(D1);
-     //gamma2 = M_PI - gamma1;
 
       l1 = sqrt(arg1*arg1 + (deltap*deltap)/4. - 2*arg1*(deltap/2.)*cos(gamma1));
       l2 = sqrt(arg12*arg12 + (deltap*deltap)/4. + 2*arg12*(deltap/2.)*cos(gamma1));
