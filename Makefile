@@ -19,7 +19,7 @@ RR_LIB =  $(LIBRARIES)
 
 
 RR: compute_RR.c
-	$(CC) compute_RR_v4.c -o compute_kernel $(CF) $(RR_INC) $(RR_LIB)
+	$(CC) compute_RR.c -o compute_kernel $(CF) $(RR_INC) $(RR_LIB)
 
 
 clean:
