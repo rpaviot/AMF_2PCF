@@ -9,9 +9,9 @@ To run the code :`
 1) First compute the radial distribution dn/dr of your survey (given your random catalog for example) and save it to an ascii file. Be cautious, as 
 one need the exact same radial range than the one used to compute the standard multipoles (they're might be problem at the boundaries to compute dn/dr, you can either extrapolate or cut the radial range.) To compute W(theta), you should pixelized your footprint into a healpix map, to pass to the Polspice code (see the example)
 3) make
-4) ./compute_RR param_file.ini
+4) ./compute_RR param_file.ini. 
 The meaning of each entries for the ascii file can be found in the README of https://github.com/mianbreton/RR_code 
-if nmu > 0, the code will compute the anistropic window function W(s,mu), if nmu = 0 it will compute the window function multipoles and if nmu = -1 
+if nmu > 0, the code will compute the anistropic window function W(s,mu): if nmu = 0 it will compute the window function multipoles and if nmu = -1 
 it will compute the AMF kernels.
 4) Once the kernels are computed, you can then extract the AMF multipoles, see the jupyter notebook for an example. 
 
