@@ -6,9 +6,9 @@ Based on a modification of the code developed by Breton & de la Torre (arXiv:201
 Prerequisites : Polspice http://www2.iap.fr/users/hivon/software/PolSpice/ to compute survey angular two-point function.
 Cuba-4.2 http://www.feynarts.de/cuba/ for 3 and 4 dimensional integrals
 
-To run the code :`
+To run the code :
 1) First compute the radial distribution dn/dr of your survey (given your random catalog for example) and save it to an ascii file. Be cautious, as 
-one need the exact same radial range than the one used to compute the standard multipoles (they're might be a problem at the boundaries to compute dn/dr, you can either extrapolate or cut the radial range.) To compute W(theta), you should pixelized your footprint into a healpix map, to pass to the Polspice code 
+one need the exact same radial range than the one used to compute the standard multipoles (there might be a problem at the boundaries to compute dn/dr, you can either extrapolate or cut the radial range.) To compute W(theta), you should pixelized your footprint into a healpix map, to pass to the Polspice code. For BOSS/eBOSS footprint, pymangle can automatically convert the polygons into a healpix map. 
 3) make
 4) ./compute_RR param_file.ini. 
 The meaning of each parameter in the ascii file can be found in the README of https://github.com/mianbreton/RR_code 
